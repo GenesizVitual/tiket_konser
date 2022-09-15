@@ -52,12 +52,11 @@ class AuthController extends Controller
                     Session::put('id', $model->id);
                     Session::put('level', $model->level);
                     return redirect('dashboard')->with('message_success', 'Selamat datang');
-                }else if ($model->level == 'staf') {
+                } else if ($model->level == 'staf') {
                     Session::put('id', $model->id);
                     Session::put('level', $model->level);
                     return redirect('dashboard')->with('message_success', 'Selamat datang');
-                }
-                else if ($model->level == 'pemesan') {
+                } else if ($model->level == 'pemesan') {
                     Session::put('id', $model->id);
                     return redirect('booking')->with('message_success', 'Selamat datang');
                 }
