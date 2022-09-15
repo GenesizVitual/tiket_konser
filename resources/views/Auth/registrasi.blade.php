@@ -82,6 +82,8 @@
                                 <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right">
                                     Daftar
                                 </button>
+                                <a href="{{url('/')}}" class="btn btn-primary btn-lg btn-icon icon-left" >
+                                    Kembali                 </a>
                             </div>
 
                         </form>

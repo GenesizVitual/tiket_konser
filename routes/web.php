@@ -16,16 +16,13 @@ use App\Http\Controllers\TiketController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/',[AuthController::class,'login']);
+Route::post('login',[AuthController::class,'login']);
 
 Route::get('registrasi',[AuthController::class,'registrasi']);
 Route::post('registrasi',[AuthController::class,'registrasi']);
 
-Route::get('login',[AuthController::class,'login']);
-Route::post('login',[AuthController::class,'login']);
+
 
 Route::get('dashboard',[TiketController::class,'daftar_booking']);
 

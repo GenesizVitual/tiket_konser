@@ -56,6 +56,9 @@
               <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right" >
                  Login                 </button>
+
+                  <a href="{{url('registrasi')}}" class="btn btn-primary btn-lg btn-icon icon-left" >
+                 Registrasi                 </a>
                </div>
 
               </form>
